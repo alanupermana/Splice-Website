@@ -1,0 +1,116 @@
+html{
+   font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
+   font-size: .9375rem;
+   font-weight: 500;
+}
+
+/* HEADER NAVBAR */
+.btnSignup{
+  border-radius: 50px;
+  border-color: white;
+  height: 35px;
+  width: 100px;
+}
+
+.nav__item{
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    margin: 0 0 0 1.33em;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+    color:#acacac;
+}
+
+a.nav__item:hover{
+  color: white;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 56px;
+    padding: .665em 1.33em;
+    background-color: #131313;
+    z-index: 100;
+}
+
+/* FOOTER */
+.page-footer {
+  font-size: .875rem;
+  font-weight: 500;
+  background-color: #131313;
+}
+
+.container{
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+h5.font-weight-bold{
+  color: white;
+}
+
+a.txtFooter{
+   cursor: pointer;
+   color: #acacac;
+}
+a.txtFooter:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.copyRight{
+  text-align: center;
+  color: #acacac;
+  padding-bottom: 20px;
+}
+
+
+/* CONTENT HOME */
+.contentHome{
+  background-image: url(http://localhost/splice/assets/img/bgHome3.jpg);
+
+}
+.textHome{
+  color: white;
+  padding: 70px;
+  width: 38%;
+
+}
+
+.textHome-1{
+  font-size: 75px;
+  font-weight: 500;
+  line-height: 1.25;
+  display: block;
+
+}
+
+.textHome-2{
+  font-size: 20px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.42857143;
+}
+
+.btnHomeSignup-2{
+  border-color: #1d53ff;
+  border-radius: 50px;
+  height: 50px;
+  width: 200px;
+  background-color: #1d53ff;
+  font-family: Arial;
+}
+
+.aHome{
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: white;
+}
