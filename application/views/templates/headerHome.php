@@ -32,7 +32,7 @@
         <a class="nav-item nav-link" style="margin-right:15px;" href="<?= base_url();?>login" >Log in</a>
 
         <button class="btnSignup" type="button" name="SignUp">
-          <a href="#" style="color:black;">SignUp</a>
+          <a href="<?= base_url();?>SignUp" style="color:black;">SignUp</a>
         </button>
       </div>
     </div>
