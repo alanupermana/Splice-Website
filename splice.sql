@@ -1,17 +1,3 @@
-/*
-Navicat MySQL Data Transfer
-
-Source Server         : localhost
-Source Server Version : 50505
-Source Host           : 127.0.0.1:3306
-Source Database       : splice
-
-Target Server Type    : MYSQL
-Target Server Version : 50505
-File Encoding         : 65001
-
-Date: 2017-05-30 11:21:49
-*/
 
 SET FOREIGN_KEY_CHECKS=0;
 
@@ -23,13 +9,29 @@ DROP TABLE IF EXISTS `community`;
 CREATE TABLE `community` (
   `id_community` int(11) NOT NULL AUTO_INCREMENT,
   `song` varchar(50) NOT NULL DEFAULT 'music.mp3',
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id_community`)
 ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of events
 -- ----------------------------
-INSERT INTO `events` VALUES ('1', 'music.mp3');
+INSERT INTO `community` VALUES ('1', 'music.mp3');
+
+-- Table structure for community
+-- ----------------------------
+DROP TABLE IF EXISTS `dashboard`;
+CREATE TABLE `dashboard` (
+  `id_dashboard` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(50) NOT NULL,
+  `deskripsi` longtext NOT NULL,
+  `gambar` varchar(100) NOT NULL DEFAULT 'gambar.jpg',
+  PRIMARY KEY (`id_dashboard`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of events
+-- ----------------------------
+INSERT INTO `dashboard` VALUES ('1', 'Membuat music yang indah','Hal pertama yang kita dengar tentang musik adalah..','gambar.png');
 
 -- ----------------------------
 -- Table structure for project
@@ -48,7 +50,7 @@ CREATE TABLE `project` (
 -- ----------------------------
 -- Records of project
 -- ----------------------------
-INSERT INTO `loker` VALUES ('1', 'Kaluna','music.mp3','2017-04-05','Kaluna Bands','alanupermana');
+INSERT INTO `project` VALUES ('1', 'Kaluna','music.mp3','2017-04-05','Kaluna Bands','alanupermana');
 
 -- ----------------------------
 -- Table structure for users
@@ -67,4 +69,4 @@ CREATE TABLE `users` (
 -- ----------------------------
 -- Records of users
 -- ----------------------------
-INSERT INTO `users` VALUES ('1', 'Alanu Dinasti Permana', 'alanupermana', '123123', 'alanupermana@gmail.com', 'noavatar.png',);
+INSERT INTO `users` VALUES ('1', 'Alanu Dinasti Permana', 'alanupermana', '123123', 'alanupermana@gmail.com', 'noavatar.png');

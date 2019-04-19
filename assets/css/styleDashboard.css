@@ -1,0 +1,53 @@
+html{
+  font-family: font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
+}
+
+
+.nav-p-Dashboard{
+  margin-left: 5px;
+  margin-right: 75px;
+
+}
+
+.nav-a-Dashboard{
+  font-size: 1.313rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-a-a-Dashboard{
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #acacac;
+  margin-right: 30px;
+}
+
+a.nav-a-Dashboard:hover{
+  text-decoration: none;
+  color: #282828;
+}
+
+a.nav-a-a-Dashboard:hover{
+  text-decoration: none;
+  color: #282828;
+}
+
+.contentDashboard{
+  background-color: #edeff0;
+  height: 1900px;
+  padding-top: 30px;
+}
+
+
+.cardDashboard{
+  border-bottom-style: inset;
+  border-bottom-color: #eff0f0;
+  margin-bottom: 10px;
+}
+
+.content-p{
+  font-size: 13px;
+  color: #7e8185;
+}

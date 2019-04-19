@@ -21,10 +21,13 @@
               </a>
             </div>
             <div class="account-wall">
-              <form class="form-signin">
+              <form class="form-signin" method="post" action="<?php echo base_url('login/loginUser'); ?>">
+
               <input name="username" type="text" class="form-control" placeholder="Username or email address" required autofocus>
-              <input name="pass" type="password" class="form-control" placeholder="Password" required>
-              <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+              <input name="password" type="password" class="form-control" placeholder="Password" required>
+              <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">
+                <a href="<?= site_url('Dashboard');?>">Log in</a>
+              </button>
                 <div class="text-center">
                   <a href="#" class="need-help">Forgot your password? </a><span class="clearfix"></span>
                 </div>
