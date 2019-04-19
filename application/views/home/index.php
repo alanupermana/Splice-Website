@@ -1,4 +1,3 @@
-
 <!-- SIGNUP CONTENT -->
 <div class="contentHome">
   <div class="textHome">

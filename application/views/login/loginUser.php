@@ -22,8 +22,8 @@
             </div>
             <div class="account-wall">
               <form class="form-signin">
-              <input type="text" class="form-control" placeholder="Username or email address" required autofocus>
-              <input type="password" class="form-control" placeholder="Password" required>
+              <input name="username" type="text" class="form-control" placeholder="Username or email address" required autofocus>
+              <input name="pass" type="password" class="form-control" placeholder="Password" required>
               <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
                 <div class="text-center">
                   <a href="#" class="need-help">Forgot your password? </a><span class="clearfix"></span>
