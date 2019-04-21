@@ -1,19 +1,13 @@
 
-     <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="page-footer font-small indigo">
-
-     <!-- Footer Links -->
      <div class="container text-center text-md-left">
-
-       <!-- Grid row -->
+       <!-- ROW -->
        <div class="row">
-
-         <!-- Grid column -->
+         <!-- COLUMN 1 -->
          <div class="col-md-2 mx-auto">
-
            <!-- Links -->
            <h5 class="font-weight-bold mt-3 mb-4">Studio</h5>
-
            <ul class="list-unstyled">
              <li>
                <a class="txtFooter" href="<?= base_url(); ?>">Features</a>
@@ -28,18 +22,12 @@
                <a class="txtFooter" href="<?= base_url(); ?>">Collaborating with Baewatch</a>
              </li>
            </ul>
-
          </div>
-         <!-- Grid column -->
-
          <hr class="clearfix w-100 d-md-none">
-
-         <!-- Grid column -->
+         <!-- COLUMN  2 -->
          <div class="col-md-2 mx-auto">
-
            <!-- Links -->
            <h5 class="font-weight-bold mt-3 mb-4">Community</h5>
-
            <ul class="list-unstyled">
              <li>
                <a class="txtFooter" href="<?= base_url(); ?>">Ableton Live Projects</a>
@@ -60,18 +48,12 @@
                <a class="txtFooter" href="<?= base_url(); ?>">Tiesto's Secrets</a>
              </li>
            </ul>
-
          </div>
-         <!-- Grid column -->
-
          <hr class="clearfix w-100 d-md-none">
-
-         <!-- Grid column -->
+         <!-- COLUMN 3 -->
          <div class="col-md-2 mx-auto">
-
            <!-- Links -->
            <h5 class="font-weight-bold mt-3 mb-4">Sounds</h5>
-
            <ul class="list-unstyled">
              <li>
                <a class="txtFooter" href="<?= base_url(); ?>">Features</a>
@@ -89,18 +71,12 @@
                <a class="txtFooter" href="<?= base_url(); ?>">KSHMR Vol. 2</a>
              </li>
            </ul>
-
          </div>
-         <!-- Grid column -->
-
          <hr class="clearfix w-100 d-md-none">
-
-         <!-- Grid column -->
+         <!-- COLUMN 4 -->
          <div class="col-md-2 mx-auto">
-
            <!-- Links -->
            <h5 class="font-weight-bold mt-3 mb-4">Plugins</h5>
-
            <ul class="list-unstyled">
              <li>
                <a class="txtFooter" href="<?= base_url(); ?>">Top VSTs</a>
@@ -118,16 +94,12 @@
                <a class="txtFooter" href="<?= base_url(); ?>">Top Manufacturers</a>
              </li>
            </ul>
-
          </div>
-         <!-- Grid column -->
-
-         <!-- Grid column -->
+         <hr class="clearfix w-100 d-md-none">
+         <!-- COLUMN 5 -->
          <div class="col-md-2 mx-auto">
-
            <!-- Links -->
            <h5 class="font-weight-bold mt-3 mb-4">Beatmaker</h5>
-
            <ul class="list-unstyled">
              <li>
                <a class="txtFooter" href="<?= base_url(); ?>">Create Your Own Beat</a>
@@ -139,16 +111,12 @@
                <a class="txtFooter" href="<?= base_url(); ?>">Just Blaze</a>
              </li>
            </ul>
-
          </div>
-         <!-- Grid column -->
-
-         <!-- Grid column -->
+         <hr class="clearfix w-100 d-md-none">
+         <!-- COLUMN 6 -->
          <div class="col-md-2 mx-auto">
-
            <!-- Links -->
            <h5 class="font-weight-bold mt-3 mb-4">Blog</h5>
-
            <ul class="list-unstyled">
              <li>
                <a class="txtFooter" href="<?= base_url(); ?>">Latest Posts</a>
@@ -163,19 +131,13 @@
                <a class="txtFooter" href="<?= base_url(); ?>">Producing Future Beats</a>
              </li>
            </ul>
-
          </div>
-         <!-- Grid column -->
-
+         <hr class="clearfix w-100 d-md-none">
        </div>
-       <!-- Grid row -->
-
      </div>
-     <!-- Footer Links -->
-
-     <!-- Copyright -->
+     <!-- COPYRIGHT -->
      <div class="copyRight">© 2019 Splice.com All Rights Reserved:
-     </br>
+      </br>
        <span>
          <a class="txtFooter" href="<?= base_url(); ?>">Terms of Use</a>
          <a class="txtFooter" href="<?= base_url(); ?>">Provacy Policy</a>
@@ -184,10 +146,6 @@
          <a class="txtFooter" href="<?= base_url(); ?>">Help</a>
        </span>
      </div>
-     <!-- Copyright -->
-
-
    </footer>
-   <!-- Footer -->
  </body>
 </html>

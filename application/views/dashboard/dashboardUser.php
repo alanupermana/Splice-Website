@@ -1,18 +1,23 @@
+    <div class="kotakPembatas">
+
 
     <!--NAVBAR  -->
-    <div class="navDashboard">
-      <nav class="navbar navbar-expand-lg navbar-light" style="height:56px">
+
+      <nav class="navbar navbar-expand-md">
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="nav-p-Dashboard">
-            <a class="nav-a-Dashboard" href="#">Dashboard</a>
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <span class="textP-1">Dashboard</span>
+            </a>
           </div>
             <a class="nav-a-a-Dashboard" href="">All Updates</a>
             <a class="nav-a-a-Dashboard" href="#">From Splice</a>
         </div>
       </nav>
-    </div>
-    <!-- CONTENT -->
+
+
      <div class="contentDashboard">
+        <!-- CONTENT -->
          <div class="container">
            <div class="card card-body mb-3">
              <div class="cardDashboard">
@@ -27,4 +32,7 @@
              </div>
            </div>
          </div>
+
+         test
       </div>
+    </div>
