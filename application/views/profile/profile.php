@@ -74,7 +74,6 @@
         </div>
 
           <div class="newCol card col-md-6 ">
-                  
                   <div class="KartuC card-body col-xs-5" id="body">
                       <div class="row">
                           <div class="contents">
