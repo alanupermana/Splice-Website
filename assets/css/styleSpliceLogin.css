@@ -1,5 +1,5 @@
 body{
-    background-color: #131313;
+    background-color: #000000;
 }
 .login-avatar{
   display: block;
@@ -125,29 +125,4 @@ body{
 .new-account:hover{
     color: #e8e7f1;
 }
-/* .login100-form-btn {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-    width: 100%;
-    height: 40px;
-    background-color: #1d53ff;
-    border-radius: 50px;
 
-    font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
-    font-size: 20px;
-    color: #fff;
-    font-weight: 500;
-    line-height: 1.2;
-    /* text-transform: uppercase; */
-
-    /* -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-  } */

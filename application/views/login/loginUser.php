@@ -25,7 +25,7 @@
               <form action="<?php echo site_url('UserController/Login'); ?>" method="POST" class="form-signin" id="login-form"  >
                 <input name="username" id="username" type="text" class="form-control" placeholder="Username or email address" required autofocus>
                 <input name="password" id="password" type="password" class="form-control" placeholder="Password" required>
-                <input type="submit" name="login" id="signin" class="form-submit" value="Log in"/>
+                <input type="submit" name="login" id="signin" class="form-submit btn btn-default" value="Log in"/>
                 <div class="text-center">
                   <a href="#" class="need-help">Forgot your password? </a><span class="clearfix"></span>
                 </div>
