@@ -1,18 +1,18 @@
-<div class="nav navbar-header" style="margin-bottom:0">
+<div id="nav" class="nav navbar-header" style="margin-bottom:0">
 
     </div>
-    <nav class="navbar navbar-expand-sm  navbar-light">
+    <nav id="navbar" class="navbar navbar-expand-sm  navbar-light">
 
         <div class="container">
-          <div class="navbar-brand ml-auto">
-            <ul class="navbar-nav">
-              <li class="nav-item">
+          <div id="navbar-brand" class="navbar-brand ml-auto">
+            <ul id="navbar-nav" class="navbar-nav">
+              <li id="nav-item" class="nav-item">
                 <a href="#" class="nav-link">Releases</a>
               </li>
-              <li class="nav-item">
+              <li id="nav-item" class="nav-item">
                 <a href="#" class="nav-link">Followers</a>
               </li>
-              <li class="nav-item">
+              <li id="nav-item" class="nav-item">
                 <a href="#" class="nav-link">Following</a>
               </li>
 
@@ -68,9 +68,6 @@
           </div>
           &nbsp;
         </div>
-
-
-
       </div>
       <div class="card col-12 ml-auto" style="width:800px" id="nah">
           <div class="card-body col-12" >

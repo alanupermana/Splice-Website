@@ -10,6 +10,8 @@
     </div>
 
     <!-- STUDIO CONTENT -->
+    <div class="">
 
+    </div>
 
     <!-- COMMUNITY CONTENT -->

@@ -18,7 +18,7 @@ class UserController extends CI_Controller {
         redirect('Splice/SignUp');
       }
     } else {
-      redirect('Splice/SignUp');
+      redirect('Splice/Login');
     }
 	}
 

@@ -18,6 +18,7 @@
       <!-- bootstrap 3 -->
 
       <link rel="stylesheet" href="<?= base_url(); ?>/assets/css/styleDashboard.css">
+      <link rel="icon" href="<?= base_url(); ?>/assets/img/iconWeb.png" type="image/gif" sizes="16x10">
       <title><?php echo $judul ?></title>
   </head>
   <body>
