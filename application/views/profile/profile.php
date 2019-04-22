@@ -93,7 +93,7 @@
                           <div class="card-text col-xs-2 mt-1 ml-auto" >
                                   <input type="submit" class="btn btn-primary" value="Play" style="border-style:solid">
                                   <input type="submit" class="btn btn-warning" value="Edit">
-                                  <input type="submit" class="btn btn-danger"  value="Delete">
+                                  <a href=""></a><input type="submit" class="btn btn-danger"  value="Delete">
                           </div> 
                       </div> 
                   </div>
