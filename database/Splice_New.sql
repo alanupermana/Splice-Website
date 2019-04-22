@@ -82,7 +82,7 @@ INSERT INTO `login` (`No`, `Username`, `Password`) VALUES
 --
 
 CREATE TABLE `signup` (
-  `Name` varchar(100) NOT NULL,	
+  `Name` varchar(100) NOT NULL,
   `Username` varchar(100) NOT NULL,
   `Password` varchar(100) NOT NULL,
   `Email` varchar(100) NOT NULL,
@@ -94,25 +94,23 @@ CREATE TABLE `signup` (
 -- Dumping data for table `signup`
 --
 INSERT INTO `signup` (`Name`,`Username`, `Password`, `Email`, `avatar`,  `RegisTime`) VALUES
-('admin',  'admin', '7815696ecbf1c96e6894b779456d330e', 'admin@admin.com', 'noavatar.png',  '03-04-2019, 22:50:23');
+('admin',  'admin', 'admin', 'admin@admin.com', 'noavatar.png',  '03-04-2019, 22:50:23');
 
 
 -- ----------------------------
 -- Table structure for project
 -- ----------------------------
 CREATE TABLE `project` (
-  `No` int(11) NOT NULL,
-  `Username` varchar(100) NOT NULL,	
-  `project_name` varchar(50) NOT NULL,
-  `song` varchar(50) NOT NULL DEFAULT 'music.mp3',
-  `waktu` date NOT NULL,
-  `deskripsi` longtext NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+  `NoPro` int(11) NOT NULL,
+  `Username` varchar(100) NOT NULL,
+  `project_name` varchar(50) NOT NULL DEFAULT 'empty',
+  `deskripsi` varchar(100) NOT NULL DEFAULT 'empty'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of project
 -- ----------------------------
-INSERT INTO `project` (`No`, `Username` , `project_name` ,`song` ,`waktu` ,`deskripsi` ) VALUES (7,'admin','Kaluna','music.mp3','2017-04-05','Kaluna Bands');
+INSERT INTO `project` (`NoPro`, `Username` , `project_name` ,`deskripsi` ) VALUES (7,'admin','empty','empty');
 
 --
 -- Indexes for dumped tables
@@ -122,7 +120,7 @@ INSERT INTO `project` (`No`, `Username` , `project_name` ,`song` ,`waktu` ,`desk
 -- Indexes for table `project`
 --
 ALTER TABLE `project`
-  ADD PRIMARY KEY (`No`);
+  ADD PRIMARY KEY (`NoPro`);
 
 --
 -- Indexes for table `login`
@@ -141,8 +139,6 @@ ALTER TABLE `signup`
 --
 
 --
-
---
 -- AUTO_INCREMENT for table `login`
 --
 ALTER TABLE `login`
@@ -153,7 +149,7 @@ COMMIT;
 -- AUTO_INCREMENT for table `project`
 --
 ALTER TABLE `project`
-  MODIFY `No` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `NoPro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

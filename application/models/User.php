@@ -21,6 +21,10 @@ class User extends CI_Model {
                 "Username" => $data['Username'],
                 "Password" => $data['Password']
             ));
+            $this->db->insert('project',
+            array(
+                "Username" => $data['Username']
+            ));
             return true;
         }
     }
@@ -53,4 +57,31 @@ class User extends CI_Model {
     // public function getImage() {
     //     return $this->db->get('image_path')->result_array();
     // }
+
+    public function Get_Project(){
+        $this->db->select('*');
+        $this->db->from('project');
+        $this->db->join('signup','signup.username=project.username');
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    public function editModelProject($noPro,$data)
+	{
+		$this->db->where('NoPro', $noPro);
+		$this->db->update('project', $data);
+	    return;
+	}
+
+    public function new_project($data)
+    {
+        $this->db->insert('project',$data);
+        return;
+    }
+
+    public function delete_project($noPro)
+    {
+        $this->db->delete('project', array('NoPro' => $noPro));
+        return;
+    }
 }

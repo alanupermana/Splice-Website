@@ -34,10 +34,11 @@ class Splice extends CI_Controller
 	}
 
 	public function Studio() {
+		$data_project = $this->User->Get_Project();
 		$cookie = $this->input->cookie('logged');
 		$data['judul'] = "Studio | Splice";
 		$this->load->view('templates/header', $data);
-		$this->load->view('studio/studioUser');
+		$this->load->view('studio/studioUser',['dataProject'=>$data_project],$cookie);
 		$this->load->view('templates/footer');
 
 	}

@@ -23,26 +23,11 @@
         <div class="nav justify-content-end">
            <div class="navbar-nav">
 
-                    <a href="#" style="border-radius:30px; width:auto;height:auto; box-sizing:border-box" class="btn btn-primary">New Project</a>
+                    <a data-toggle="modal" data-target="#edit1" href="#" style="border-radius:30px; width:auto;height:auto; box-sizing:border-box" class="btn btn-primary">New Project</a>
 
            </div>
 
         </div>
-
-        <!-- <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-
-              <li class="nav-item  d-sm-block d-md-none">
-                <div class="dropdown-menu" aria-labelled
-
-                by="smallerscreenmenu">
-                    <a class="dropdown-item" href="#">Dashboard</a>
-                    <a class="dropdown-item" href="#">Profile</a>
-                </div>
-              </li>
-
-            </ul>
-          </div> -->
     </nav>
 
 
@@ -112,33 +97,37 @@
                     </div>
                 </div>
                 &nbsp;
-                <!-- <hr width="920px"> -->
 
-                <div class="card col-10 mx-auto">
-                   
-                    <div class="card-body" id="body">
-                        <div class="row">
-                            <div class="contents">
-                                <span class="art-wrapper">
-                                    <a href="">
-                                        <span class="art">
-                                            <img src="https://splice-res.cloudinary.com/image/upload/f_auto,q_auto,w_auto/t_cover/app-assets/general/defaultavatarhuge.jpg" width="40px"alt="">
+                <?php foreach ($dataProject as $d ) {?>
+
+                        <div class="card col-10 mx-auto">
+                            <div class="card-body" id="body">
+                                <div class="row">
+                                    <div class="contents">
+                                        <span class="art-wrapper">
+                                            <a href="">
+                                                <span class="art">
+                                                    <img src="https://splice-res.cloudinary.com/image/upload/f_auto,q_auto,w_auto/t_cover/app-assets/general/defaultavatarhuge.jpg" width="40px"alt="">
+                                                </span>
+                                            </a>
                                         </span>
-                                    </a>
-                                </span> 
+                                    </div>
+                                    <div class="card-text col-7">
+                                        <span class="project-name"><?php echo $d->project_name ?></span>
+                                        <p class="card-text" id="day"><?php echo $d->deskripsi ?></p>
+                                    </div>
+                                    <div class="card-text col-xs-2 mt-1 ml-auto" >
+                                            <input type="submit" class="btn btn-primary" value="Play" style="border-style:solid">
+                                            <input type="submit" class="btn btn-warning" value="Edit" data-toggle="modal" data-target="#edit<?php echo $d->NoPro ?>">
+                                            <a href="<?php echo site_url('UserController/deleteProject'); ?>" onClick="return confirm('Apakah Anda Yakin?')">
+                                                <input type="submit" class="btn btn-danger"  value="Delete">
+                                            </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-text col-7">
-                                <span class="project-name">coba</span>
-                                <p class="card-text" id="day">a day ago</p>
-                            </div> 
-                            <div class="card-text col-xs-2 mt-1 ml-auto" >
-                                    <input type="submit" class="btn btn-primary" value="Play" style="border-style:solid">
-                                    <input type="submit" class="btn btn-warning" value="Edit">
-                                    <input type="submit" class="btn btn-danger"  value="Delete">
-                            </div> 
-                        </div> 
-                    </div>
-                </div>
+                        </div>
+
+                <?php } ?>
 
                 <!-- Akhir card -->
 
@@ -149,4 +138,84 @@
 
         </div>
     </div>
+
+    <!-- EDIT PROJECT -->
+    <?php foreach ($dataProject as $d ) {?>
+      <div class="modal fade" id="edit<?php echo $d->NoPro ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+            <center><h2>Edit Project <?php echo $d->Username ?> </h2></center>
+            </div>
+            <div class="modal-body">
+            <!-- isi form ini -->
+            <form method="post" action="<?php echo site_url('UserController/editProject'); ?>">
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Nomor Project</label>
+                    <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Nomor project" name="NoPro" value="<?php echo $d->NoPro?>" required>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Username</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username" name="Username" value="<?php echo $d->Username?>" required>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Project Name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Project Name" name="project_name"  value="<?php echo $d->project_name ?>" required>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Deskripsi</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Description" name="deskripsi" value="<?php echo $d->deskripsi ?>" required>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
+            <input  type="submit" class="btn btn-primary" id="hapus" value="Submit" placeholder="Simpan">
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    <?php } ?>
+
+    <!-- NEW PROJECT -->
+    <div class="modal fade" id="edit1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          <center><h2>NEW PROJECT</h2></center>
+          </div>
+          <div class="modal-body">
+          <!-- isi form ini -->
+          <form method="POST" action="<?php echo base_url('UserController/newProject'); ?>">
+              <div class="form-group">
+                  <label for="formGroupExampleInput">Nomor Project</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nomor project" name="NoPro" value="<?php echo $d->NoPro?>" required>
+              </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Username</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username" name="Username" value="<?php echo $d->Username?>" required>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Project Name</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Project Name" name="project_name" required >
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Deskripsi</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Deskripsi" name="deskripsi"required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+            <input  type="submit" class="btn btn-primary" id="hapus" value="Submit" placeholder="Simpan">
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
   </div>

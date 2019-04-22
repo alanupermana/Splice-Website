@@ -26,7 +26,7 @@ class UserController extends CI_Controller {
 
     $user = $this->User->findUser();
       if($user != null){
-				set_cookie('logged', $user[0]['Username'], '3600');
+		set_cookie('logged', $user[0]['Username'], '3600');
         redirect('Splice/Dashboard');
       } else {
         redirect('Splice/Login');
@@ -43,5 +43,49 @@ class UserController extends CI_Controller {
 				redirect('Splice');
 		}
 	}
+
+
+	public function editProject()
+	{
+		$noPro = $this->input->post('NoPro');
+		$username = $this->input->post('Username');
+		$project_name = $this->input->post('project_name');
+		$deskripsi = $this->input->post('deskripsi');
+		$data = array(
+			'NoPro' => $noPro,
+			'Username' => $username,
+			'project_name' => $project_name,
+			'deskripsi' => $deskripsi
+		);
+		$this->User->editModelProject($username,$data);
+
+		redirect('Splice/Studio');
+	}
+
+	public function newProject()
+	{
+		$noPro = $this->input->post('NoPro');
+		$username = $this->input->post('Username');
+		$project_name = $this->input->post('project_name');
+		$deskripsi = $this->input->post('deskripsi');
+		$data = array(
+			'NoPro' => $noPro,
+			'Username' => $username,
+			'project_name' => $project_name,
+			'deskripsi' => $deskripsi
+		);
+		$this->User->new_project($data);
+
+		redirect('Splice/Studio');
+
+	}
+
+	public function deleteProject($noPro)
+	{
+		$this->User->delete_project($noPro);
+		redirect('Splice/Studio');
+	}
+
+
 
 }
