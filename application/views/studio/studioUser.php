@@ -3,7 +3,7 @@
 <!-- Start Sidebar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light"style="border-bottom:1px solid white">
         <div class="navbar-header" >
-         <a class="navbar-brand"  href="#">
+            <a class="navbar-brand"  href="#">
            <span class="textP-2">Studio</span>
          </a>
         </div>

@@ -82,7 +82,7 @@ INSERT INTO `login` (`No`, `Username`, `Password`) VALUES
 --
 
 CREATE TABLE `signup` (
-  `Name` varchar(100) NOT NULL,	
+  `Name` varchar(100) NOT NULL,
   `Username` varchar(100) NOT NULL,
   `Password` varchar(100) NOT NULL,
   `Email` varchar(100) NOT NULL,
@@ -102,7 +102,7 @@ INSERT INTO `signup` (`Name`,`Username`, `Password`, `Email`, `avatar`,  `RegisT
 -- ----------------------------
 CREATE TABLE `project` (
   `No` int(11) NOT NULL,
-  `Username` varchar(100) NOT NULL,	
+  `Username` varchar(100) NOT NULL,
   `project_name` varchar(50) NOT NULL,
   `song` varchar(50) NOT NULL DEFAULT 'music.mp3',
   `waktu` date NOT NULL,
