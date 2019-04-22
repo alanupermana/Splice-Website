@@ -119,7 +119,7 @@
                                     <div class="card-text col-xs-2 mt-1 ml-auto" >
                                             <input type="submit" class="btn btn-primary" value="Play" style="border-style:solid">
                                             <input type="submit" class="btn btn-warning" value="Edit" data-toggle="modal" data-target="#edit<?php echo $d->NoPro ?>">
-                                            <a href="<?php echo site_url('UserController/deleteProject'); ?>" onClick="return confirm('Apakah Anda Yakin?')">
+                                            <a href="<?php echo site_url('UserController/deleteProject/<?php echo $d->NoPro ?>;'); ?>">
                                                 <input type="submit" class="btn btn-danger"  value="Delete">
                                             </a>
                                     </div>
@@ -168,8 +168,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
-            <input  type="submit" class="btn btn-primary" id="hapus" value="Submit" placeholder="Simpan">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <input  type="submit" class="btn btn-primary" id="hapus" value="Apply" placeholder="Simpan">
             </div>
             </form>
           </div>
@@ -205,8 +205,8 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-            <input  type="submit" class="btn btn-primary" id="hapus" value="Submit" placeholder="Simpan">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <input  type="submit" class="btn btn-primary" id="hapus" value="Create" placeholder="Simpan">
           </form>
           </div>
         </div>

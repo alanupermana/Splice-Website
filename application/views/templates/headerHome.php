@@ -17,6 +17,7 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
       <link rel="stylesheet" href="<?= base_url(); ?>/assets/css/styleSplice.css">
+      <link rel="icon" href="<?= base_url(); ?>/assets/img/iconWeb.png" type="image/gif" sizes="16x10">
       <title><?php echo $judul ?></title>
   </head>
 

@@ -1,5 +1,5 @@
     <!-- SIGNUP CONTENT -->
-    <div class="contentHome">
+    <div class="contentHomee">
       <div class="textHome">
         <p class="textHome-1">Let your creativity flow</p>
         <p class="textHome-2">Join over a million musicians using Splice to find sounds, get gear, and connect with one another.</p>

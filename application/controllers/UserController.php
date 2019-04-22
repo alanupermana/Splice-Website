@@ -57,7 +57,7 @@ class UserController extends CI_Controller {
 			'project_name' => $project_name,
 			'deskripsi' => $deskripsi
 		);
-		$this->User->editModelProject($username,$data);
+		$this->User->editModelProject($noPro,$data);
 
 		redirect('Splice/Studio');
 	}
@@ -83,7 +83,7 @@ class UserController extends CI_Controller {
 	public function deleteProject($noPro)
 	{
 		$this->User->delete_project($noPro);
-		redirect('Splice/Studio');
+		// redirect('Splice/Studio');
 	}
 
 

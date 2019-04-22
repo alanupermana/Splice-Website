@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="<?= base_url(); ?>/assets/css/styleSpliceSignUp.css">
+      <link rel="icon" href="<?= base_url(); ?>/assets/img/iconWeb.png" type="image/gif" sizes="16x10">
       <script src="<?php echo base_url('/assets/js/siginup.js'); ?>"></script>
 
   </head>
