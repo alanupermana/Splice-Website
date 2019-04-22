@@ -140,7 +140,9 @@ a .menu-collapsed{
       background-color:#f8f8f8;
       padding: 0;
   }
-
+.tiga input[type="submit"]{
+  border-radius:20px;
+}
 
   .sidebar-expanded {
       width: 230px;
