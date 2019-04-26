@@ -40,7 +40,7 @@
               </div>
 
               <div class="card-text col-7 mx-auto">
-                  <a href="#" id="editBtn" class="btn btn-primary" style="border-radius:30px;">Edit Profile</a>
+                  <a href="<?php echo site_url('Splice/EditProfile') ?>" id="editBtn" class="btn btn-primary" style="border-radius:30px;">Edit Profile</a>
               </div>
 
             <hr class="horizontal">

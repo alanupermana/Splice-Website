@@ -46,7 +46,7 @@
               <img src=<?php echo base_url('assets/img/noavatar.png'); ?> alt="" style="width:30px;">
             </a>
             <div class="dropdown-menu dropdown-menu-right" >
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="<?php echo site_url('Splice/Profile'); ?>">
                 <?php
                     $cookie = $this->input->cookie('logged');
                     if(isset($cookie)){
@@ -55,9 +55,10 @@
                         echo $_SESSION['successLogin'];
                     }
                 ?>
+            </br>
+                View Your Profile
               </a>
-              <a class="dropdown-item" href="<?php echo site_url('Splice/Profile'); ?>">
-                  View Your Profile
+
               </a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Settings</a>

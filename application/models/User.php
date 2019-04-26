@@ -58,6 +58,8 @@ class User extends CI_Model {
     //     return $this->db->get('image_path')->result_array();
     // }
 
+    // PROJECT
+
     public function Get_Project(){
         $this->db->select('*');
         $this->db->from('project');
@@ -72,6 +74,34 @@ class User extends CI_Model {
 		$this->db->update('project', $data);
 	    return;
 	}
+
+    public function new_project($data)
+    {
+        $this->db->insert('project',$data);
+        return;
+    }
+
+    public function delete_project($noPro)
+    {
+        $this->db->delete('project', array('NoPro' => $noPro));
+        return;
+    }
+
+
+    // Profile
+    public function Get_Profile(){
+        $this->db->select('*');
+        $this->db->from('signup');
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    public function editModelProfile($username,$data)
+    {
+        $this->db->where('NoPro', $noPro);
+        $this->db->update('project', $data);
+        return;
+    }
 
     public function new_project($data)
     {

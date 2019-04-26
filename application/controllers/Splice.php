@@ -4,15 +4,14 @@ class Splice extends CI_Controller
 {
 	public function index(){
     $cookie = $this->input->cookie('logged');
-    if(isset($cookie) || isset($_SESSION['successLogin'])){
-    	$this->Dashboard();
+	    if(isset($cookie) || isset($_SESSION['successLogin'])){
+	    	$this->Dashboard();
 		} else{
 			$data['judul'] = 'Splice';
 			$this->load->view('templates/headerHome', $data);
 			$this->load->view('home/index');
 			$this->load->view('templates/footerHome');
 		}
-
 	}
 
 	public function Login() {
@@ -59,5 +58,13 @@ class Splice extends CI_Controller
 		$this->load->view('profile/profile');
 		$this->load->view('templates/footer');
 
+	}
+
+	public function EditProfile(){
+		$cookie = $this->input->cookie('logged');
+		$data['judul'] = $cookie;
+		$this->load->view('templates/header', $data);
+		$this->load->view('profile/EditProfile');
+		$this->load->view('templates/footer');
 	}
 }

@@ -1,0 +1,148 @@
+html,body{
+   height: 100%;
+}
+body{
+   background-color:#edeff0;
+}
+#row-body{
+   margin-left: 0;
+   margin-right: 0;
+}
+#profile{
+   font-size: 12px;
+   font-weight: 700;
+   font-family: font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
+   color:#7e8185;
+}
+#security{
+   font-size: 12px;
+   font-weight: 700;
+   font-family: font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
+   color:#7e8185;
+}
+#usnm{
+   font-size: 12px;
+   font-weight: 700;
+   font-family: font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
+   color:#7e8185;
+}
+#email{
+   font-size: 12px;
+   font-weight: 700;
+   font-family: font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
+   color:#7e8185;
+}
+#nama{
+   font-size: 12px;
+   font-weight: 700;
+   font-family: font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
+   color:#7e8185;
+}
+#location{
+   font-size: 12px;
+   font-weight: 700;
+   font-family: font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
+   color:#7e8185;
+}
+#biog{
+   font-size: 12px;
+   font-weight: 700;
+   font-family: font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
+   color:#7e8185;
+}
+#paswd{
+   font-size: 12px;
+   font-weight: 700;
+   font-family: font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
+   color:#7e8185;
+}
+#deleteAcc{
+   font-size: 12px;
+   font-weight: 700;
+   font-family: font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
+   color:#7e8185;
+}
+.profil_head a{
+   font-size: 23px;
+   color: black;
+   font-family: font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
+   font-weight:500;
+}
+.nav_head li a{
+   font-size: 17px;
+   color: #7e8185;
+   font-family: font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
+   font-weight:500;
+}
+.profil_isi input[type="text"]{
+   width: 350px;
+   border-radius: 5px;
+   color: #353535;
+   height: 30px;
+   font-family: font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
+ }
+ .profil_isi input[type="email"]{
+   width: 350px;
+   border-radius: 5px;
+   color: #353535;
+   height: 30px;
+   font-family: font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
+ }
+ .profil_isi textarea{
+   width: 350px;
+   border-radius: 5px;
+   color: #353535;
+   font-family: font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
+ }
+ #update{
+    border-radius:20px;
+    font-family: font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
+ }
+
+ .samping_card input[type="password"]{
+   width: 150px;
+   border-radius: 5px;
+   color: #353535;
+   font-family: font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
+   height: 30px;
+ }
+ .samping_card label{
+   margin-left:17px;
+ }
+
+/* upload */
+.btn-file {
+   position: relative;
+   overflow: hidden;
+}
+.btn-file input[type=file] {
+   position: absolute;
+   top: 0;
+   right: 0;
+   min-width: 100%;
+   min-height: 100%;
+   font-size: 100px;
+   text-align: right;
+   filter: alpha(opacity=0);
+   opacity: 0;
+   outline: none;
+   background: white;
+   cursor: inherit;
+   display: block;
+}
+
+#img-upload{
+   width: 100%;
+}
+.split_card #changePswd{
+   font-size: 13px;
+   font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
+   font-weight:700;
+  
+}
+.split_card #del{
+   font-size: 13px;
+   font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
+   font-weight:700;
+
+}

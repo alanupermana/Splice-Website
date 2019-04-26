@@ -38,7 +38,7 @@ CREATE TABLE `community` (
 -- ----------------------------
 -- Records of community
 -- ----------------------------
-INSERT INTO `community` VALUES ('1', 'music.mp3');
+INSERT INTO `community` VALUES (1, 'music.mp3');
 
 -- ----------------------------
 -- Table structure for dashboard
@@ -55,7 +55,7 @@ CREATE TABLE `dashboard` (
 -- ----------------------------
 -- Records of dashboard
 -- ----------------------------
-INSERT INTO `dashboard` VALUES ('1', 'Membuat music yang indah','Hal pertama yang kita dengar tentang musik adalah..','gambar.png');
+INSERT INTO `dashboard` VALUES (1, 'Membuat music yang indah','Hal pertama yang kita dengar tentang musik adalah..','gambar.png');
 
 
 --
@@ -72,8 +72,7 @@ CREATE TABLE `login` (
 -- Dumping data for table `login`
 --
 
-INSERT INTO `login` (`No`, `Username`, `Password`) VALUES
-(7, 'admin', '7815696ecbf1c96e6894b779456d330e');
+INSERT INTO `login` VALUES (1, 'admin', 'admin');
 
 -- --------------------------------------------------------
 
@@ -87,14 +86,14 @@ CREATE TABLE `signup` (
   `Password` varchar(100) NOT NULL,
   `Email` varchar(100) NOT NULL,
   `avatar` varchar(100) NOT NULL DEFAULT 'noavatar.png',
+  `Bio` varchar(150) NOT NULL DEFAULT 'Music my life',
   `RegisTime` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `signup`
 --
-INSERT INTO `signup` (`Name`,`Username`, `Password`, `Email`, `avatar`,  `RegisTime`) VALUES
-('admin',  'admin', 'admin', 'admin@admin.com', 'noavatar.png',  '03-04-2019, 22:50:23');
+INSERT INTO `signup` VALUES ('admin', 'admin', 'admin', 'admin@admin.com', 'noavatar.png', 'Music my life','03-04-2019, 22:50:23');
 
 
 -- ----------------------------
@@ -110,7 +109,7 @@ CREATE TABLE `project` (
 -- ----------------------------
 -- Records of project
 -- ----------------------------
-INSERT INTO `project` (`NoPro`, `Username` , `project_name` ,`deskripsi` ) VALUES (7,'admin','empty','empty');
+INSERT INTO `project` VALUES (1,'admin','empty','empty');
 
 --
 -- Indexes for dumped tables
