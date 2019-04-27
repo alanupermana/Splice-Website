@@ -1,5 +1,8 @@
 <!-- SIGNUP CONTENT -->
-<div class="contentHome">
+<div class="contentHome" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/91.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;">
   <div class="textHome">
     <p class="textHome-1">Let your creativity flow</p>
     <p class="textHome-2">Join over a million musicians using Splice to find sounds, get gear, and connect with one another.</p>
