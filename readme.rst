@@ -35,6 +35,6 @@ Halaman yang dijadikan sistem CRUD
 MVC Folder Index
 *******************
 
-**Controller** 	: Splice.php, User.php
-**Model**				: User.php
-**View**				: Home(Index.php), Login(loginUser.php), Signup(signupUser.php), Dashboard(DashboardUser.php), Studio(studioUser.php), Community(communityUser.php), Profile(Profile.php, editPorifle.php)
+- **Controller** 	: Splice.php, User.php
+- **Model**				: User.php
+- **View**				: Home(Index.php), Login(loginUser.php), Signup(signupUser.php), Dashboard(DashboardUser.php), Studio(studioUser.php), Community(communityUser.php), Profile(Profile.php, editPorifle.php)
