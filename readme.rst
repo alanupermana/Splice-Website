@@ -22,13 +22,13 @@ Halaman yang dibangun
 Halaman yang dijadikan sistem CRUD
 **************************
 
--	Dashboard : Read Project 
--	Sign up : Create User
--	Log in : Read User berdasarkan Username dan Password
--	Studio : Create, Read, Update, Delete suatu Project
--	Community : Read Project
--	Profile : Read
--	Edit Profile : Create, Read, Update, Delete User
+-	**Dashboard** : Read Project 
+-	**Sign up** : Create User
+-	**Log in** : Read User berdasarkan Username dan Password
+-	**Studio** : Create, Read, Update, Delete suatu Project
+-	**Community** : Read Project
+-	**Profile** : Read
+-	**Edit Profile** : Create, Read, Update, Delete User
 
 
 *******************
@@ -37,11 +37,4 @@ MVC Folder Index
 
 **Controller** 	: Splice.php, User.php
 **Model**				: User.php
-**View**			
-- Home 			: Index.php
-- Login 		: loginUser.php
-- Signup 		: signupUser.php
-- Dashboard	: DashboardUser.php
-- Studio 		: studioUser.php
-- Community :communityUser.php
-- Profile 	: Profile.php, editPorifle.php
+**View**				: Home(Index.php), Login(loginUser.php), Signup(signupUser.php), Dashboard(DashboardUser.php), Studio(studioUser.php), Community(communityUser.php), Profile(Profile.php, editPorifle.php)
