@@ -23,6 +23,7 @@
   </head>
   <body>
     <!--NAVBAR  -->
+
     <div class="navDashboard-1 fixed-top">
       <nav class="navbar navbar-expand-lg navbar-dark" style="height:56px">
         <!-- LOGO -->
@@ -40,11 +41,15 @@
           </div>
         </div>
         <!-- MENU PROFILE -->
+
         <div class="nav justify-content-end" >
           <li class="nav-item dropdown justify-content-end">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              <img src=<?php echo base_url('assets/img/noavatar.png'); ?> alt="" style="width:30px;">
-            </a>
+
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  <img src="<?php echo base_url('assets/img/noavatar.png');?>" alt="" style="width:30px;">
+                </a>
+
+
             <div class="dropdown-menu dropdown-menu-right" >
               <a class="dropdown-item" href="<?php echo site_url('Splice/Profile'); ?>">
                 <?php
@@ -69,5 +74,6 @@
             </div>
           </li>
         </div>
+    
       </nav>
     </div>

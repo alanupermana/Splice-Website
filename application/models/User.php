@@ -50,14 +50,15 @@ class User extends CI_Model {
         return $result->result_array();
     }
 
-    // public function imageUpload($imgName) {
-    //     $this->db->insert('image_path', array('ImgName' => $imgName));
-    // }
-    //
-    // public function getImage() {
-    //     return $this->db->get('image_path')->result_array();
-    // }
+    public function imageUpload($imgName) {
+        $this->db->insert('signup', array('avatar' => $imgName));
+        $this->db->update('signup', $imgName);
+        return;
+    }
 
+    public function getImage() {
+        return $this->db->get('avatar')->result_array();
+    }
     // PROJECT
 
     public function Get_Project(){
@@ -96,22 +97,29 @@ class User extends CI_Model {
         return $query->result();
     }
 
-    public function editModelProfile($username,$data)
+    public function editModelProfileNonPass($data)
     {
-        $this->db->where('NoPro', $noPro);
-        $this->db->update('project', $data);
+        // $this->db->where('username', $username);
+        $this->db->update('signup', $data);
         return;
     }
 
-    public function new_project($data)
+    public function editModelProfilePass($data)
     {
-        $this->db->insert('project',$data);
+        $this->db->update('signup', $data);
         return;
     }
 
-    public function delete_project($noPro)
-    {
-        $this->db->delete('project', array('NoPro' => $noPro));
-        return;
-    }
+
+    // public function new_project($data)
+    // {
+    //     $this->db->insert('signup',$data);
+    //     return;
+    // }
+    //
+    // public function delete_project($noPro)
+    // {
+    //     $this->db->delete('project', array('NoPro' => $noPro));
+    //     return;
+    // }
 }

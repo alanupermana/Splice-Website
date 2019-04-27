@@ -25,18 +25,20 @@
             </div>
         </nav>
       </div>
-
+    <?php foreach ($dataProfile as $d ) {?>
     <div class="konten content">
       <div class="kolom row">
         <div class="kartu card">
               <div class="d-flex justify-content-center">
                   <div class="brand_logo_container">
-                    <img src="https://belajarbahasakorea.net/wp-content/uploads/2019/03/Gesture-Tangan-Saranghaeyo-4.jpg" class="brand_logo" alt="Logo">
+                    <img src="<?php echo base_url('assets/img/') . $d->avatar; ;?>" class="brand_logo" alt="Logo">
                   </div>
               </div>
 
               <div class="card-title col-xs-5 mx-auto mt-5 ">
-                <h5 class="card-title">Lukman17</h5>
+                <h5 class="card-title" >
+                    <?php echo $d->Username?>
+                </h5>
               </div>
 
               <div class="card-text col-7 mx-auto">
@@ -108,4 +110,5 @@
 
       </div>
     </div>
+    <?php } ?>
 </div>
