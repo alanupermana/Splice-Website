@@ -33,7 +33,7 @@ Halaman yang dijadikan sistem CRUD
 *******************
 Framework - Codeigniter
 *******************
-- **Library**				:	Session, Database
+- **Library**				:	session, database
 - **Helper**				: url, cookie, form
 
 
