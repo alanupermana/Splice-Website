@@ -37,7 +37,7 @@
 
     </head>
     <body>
-        <div class="bglogin">
+        <div class="bglogin" style="padding-left:550px;">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-md-4 col-md-offset-4">
