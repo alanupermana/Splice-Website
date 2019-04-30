@@ -29,6 +29,7 @@ a.nav__item:hover{
 .navHeaderDashboard{
   background-color: #131313;
 }
+/* END HEADER NAVBAR */
 
 /* FOOTER */
 .page-footer {
@@ -62,7 +63,7 @@ a.txtFooter:hover{
   color: #acacac;
   padding-bottom: 20px;
 }
-
+/* END FOOTER */
 
 /* CONTENT HOME */
 .contentHome{
@@ -110,5 +111,6 @@ a.txtFooter:hover{
   padding-top: 14px;
   padding-bottom: 14px;
   color: white;
-
 }
+
+/* END CONTENT HOME */
