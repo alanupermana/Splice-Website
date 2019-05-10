@@ -3,8 +3,6 @@ html{
 
 }
 
-
-
 /* HEADER DASHBOARD */
 .btnSignup{
   border-radius: 50px;
@@ -29,7 +27,9 @@ a.nav__item:hover{
 
 .navDashboard-1{
   background-color: #131313;
+
 }
+/* END HEADER DASHBOARD */
 
 
 
@@ -69,7 +69,7 @@ a.nav-a-a-Dashboard:hover{
 .contentDashboard{
   padding-top: 40px;
   padding-bottom: 40px;
-  height: auto;
+  height: 100px;
   background-color: #edeff0;
 }
 
@@ -83,11 +83,10 @@ a.nav-a-a-Dashboard:hover{
   font-size: 13px;
   color: #7e8185;
 }
-
+/* END DASHBOARD */
 
 
 /* COMMUNITY & STUDIO*/
-
 .kotakPembatas{
   padding-top: 56px;
 }
@@ -144,7 +143,7 @@ a.nav-a-a-Dashboard:hover{
 .main{
   margin: 0;
   padding: 0;
-  height: 999999px;
+  height: 99px;
   background-color: #edeff0;
 }
 /* ini untuk mengatur ul li */
@@ -390,7 +389,7 @@ a .menu-collapsed{
     background-color: transparent;
     font-size:18px;
 }
-
+/*END COMMUNITY & STUDIO*/
 
 
 
@@ -535,5 +534,5 @@ a .menu-collapsed{
    font-size: 13px;
    font-family: Splice-Sans,Avenir,Arial,Helvetica,sans-serif;
    font-weight:700;
-
 }
+/* END EDIT PROFILE */

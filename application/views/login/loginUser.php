@@ -37,22 +37,32 @@
 
     </head>
     <body>
-        <div class="bglogin" style="padding-left:550px;">
+        <div class="bglogin">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-md-4 col-md-offset-4">
+                    <div class="col-sm-6 col-md-12 col-md-offset-12">
 
                         <!-- LOGO -->
-                        <div class="login-avatar">
+                        <div class="login-avatar" >
                             <a href="<?= base_url();?>">
                                 <img src=<?php echo base_url('assets/img/logoSpliceLogin.png'); ?> alt="logo">
                             </a>
                         </div>
                         <!-- END LOGO -->
+                        <?php
+                            if(isset($_SESSION['SuccessReg'])) {
+                                $this->load->view('Alerts/SuccessRegis');
+                            } else if(isset($_SESSION['falselogin'])) {
+                                $this->load->view('Alerts/FailLogin');
+                            }
+                        ?>
+
+
 
                         <!-- FORM -->
-                        <div class="account-wall">
+                        <div class="account-wall" style="margin-left:370px;" width:1000px;>
                             <form action="<?php echo site_url('UserController/Login'); ?>" method="POST" class="form-signin" id="login-form"  >
+
                                 <input name="username" id="username" type="text" class="form-control" placeholder="Username or email address" required autofocus>
                                 <input name="password" id="password" type="password" class="form-control" placeholder="Password" required>
                                 <input type="submit" name="login" id="signin" class="form-submit btn btn-default" value="Log in"/>

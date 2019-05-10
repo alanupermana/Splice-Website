@@ -25,9 +25,8 @@ h1{
 }
 .form-signin{
     /* max-width: 380px; */
-    max-height: 490px;
+    max-height: 100px;
     padding: 15px;
-    margin: 0 auto;
 }
 .form-signin .form-signin-heading, .form-signin .checkbox{
     margin-bottom: 10px;
@@ -215,4 +214,4 @@ h1{
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
-  } */ 
+  } */

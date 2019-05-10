@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <!-- BS4 -->
@@ -36,10 +35,10 @@
         <!-- END TITTLE -->
     </head>
     <body>
-        <div class="bglogin" style="padding-left:550px;">
+        <div class="bglogin">
             <div class="container" >
                 <div class="row">
-                    <div class="col-sm-6 col-md-4 col-md-offset-4">
+                    <div class="col-sm-6 col-md-12 col-md-offset-12">
 
                         <!-- LOGO -->
                         <div class="login-avatar">
@@ -50,9 +49,15 @@
                         <!-- END LOGO -->
 
                         <h1>Join Splice</h1>
+                        <?php
+                            if(isset($_SESSION['FailReg'])) {
+                                $this->load->view('Alerts/FailReg');
+                            }
+                        ?>
 
                         <!-- FORM -->
-                        <div class="account-wall">
+
+                        <div class="account-wall" style="margin-left:370px;">
                             <form action="<?php echo site_url('UserController/Signup'); ?>" method="POST" class="form-signin" >
 
                                 <!-- DATA -->
@@ -89,6 +94,7 @@
 
                             </form>
                         </div>
+
                         <!-- END FORM -->
 
                         <!-- ALREADY MEMBER -->

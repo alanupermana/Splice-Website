@@ -8,11 +8,14 @@ class UserController extends CI_Controller {
 	{
 		if($_POST['password'] != null){
 			if($this->User->Signup()) {
+				$this->session->set_flashdata('SuccessReg','Success');
         		redirect('Splice/Login');
       		} else {
+				$this->session->set_flashdata('FailReg', 'Fail');
         		redirect('Splice/SignUp');
       		}
     	} else {
+			$this->session->set_flashdata('FailReg', 'Fail');
       		redirect('Splice/Login');
     	}
 	}
@@ -24,6 +27,7 @@ class UserController extends CI_Controller {
 			set_cookie('logged', $user[0]['Username'], '3600');
 	        redirect('Splice/Dashboard');
 	    } else {
+			$this->session->set_flashdata('falselogin','nodata');
 	        redirect('Splice/Login');
 	    }
 	}
@@ -66,10 +70,10 @@ class UserController extends CI_Controller {
 			if($this->User->new_project()) {
 				redirect('Splice/Studio');
 			} else{
-				redirect('Splice');
+				redirect('Splice/Studio');
 			}
 		}else{
-			redirect('Splice');
+			redirect('Splice/Studio');
 		}
 	}
 
